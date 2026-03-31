@@ -1,0 +1,24 @@
+[package]
+name = "algorand"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+ed25519-dalek = { version = "3.0.0-pre.6", features = ["rand_core"] }
+rand = "0.10.0"
+sha2 = "0.10.9"
+thiserror = "2.0.18"
+futures = "0.3"
+progenitor-client = {version = "0.13.0"}
+progenitor = { version = "0.13.0" }
+reqwest = { version = "0.13", features = ["json", "query", "stream"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0.149"}
+chrono = { version = "0.4", features = ["serde"] }
+
+[build-dependencies]
+syn = "2.0.117"
+prettyplease = "0.2.37"
+serde_json = { version = "1.0.149"}
+progenitor = { version = "0.13.0" }
