@@ -21,8 +21,6 @@ cargo test mnemonic::tests
 cargo check
 ```
 
-The `setup.sh` exports `TEST_PKCS11_MODULE` pointing to the SoftHSM2 library — source it if PKCS#11 tests are added.
-
 ## Architecture
 
 This is a Rust implementation of Algorand-style cryptographic account management, modelled after [go-algorand-sdk](https://github.com/algorand/go-algorand-sdk/blob/main/crypto/account.go).
